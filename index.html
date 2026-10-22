@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>David Fernández | Enterprise Solutions & ERP Transformation</title>
 <meta name="description" content="David Fernández — Head of Core Business Solutions. Enterprise applications, ERP transformation, delivery governance and multidisciplinary leadership.">
-<meta name="portfolio-revision" content="contact-20261022"><meta name="theme-color" content="#102b2c"><meta property="og:title" content="David Fernández — Business vision. Technology leadership."><meta property="og:description" content="Head of Core Business Solutions · ERP Transformation · Delivery & Governance · Cuenca, Ecuador"><meta property="og:type" content="website">
+<meta name="portfolio-revision" content="mobile-20261022"><meta name="theme-color" content="#102b2c"><meta property="og:title" content="David Fernández — Business vision. Technology leadership."><meta property="og:description" content="Head of Core Business Solutions · ERP Transformation · Delivery & Governance · Cuenca, Ecuador"><meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23102b2c'/%3E%3Ctext x='9' y='43' fill='%23dbf09a' font-family='Georgia' font-size='31'%3EDF%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
 <style>
@@ -22,11 +22,60 @@ html[data-motion=off] *,html[data-motion=off] *:before,html[data-motion=off] *:a
 @media(max-width:760px){h1{font-size:clamp(44px,10vw,65px);letter-spacing:-2.7px}.hero-org{font-size:9px}.visual{min-height:370px}.particle-scene{height:215px}.scene-label{font-size:7px}.leadership-section{padding-top:0}.mandate-shell{grid-template-columns:1fr}.mandate-sidebar{padding:22px 17px}.mandate-role{padding-bottom:15px}.mandate-role h3{font-size:18px}.mandate-tabs{grid-template-columns:1fr 1fr;gap:7px}.mandate-tabs button{padding:12px 8px;gap:6px;font-size:10px;grid-template-columns:15px 1fr}.mandate-tabs b{display:none}.mandate-content{padding:28px 24px;min-height:420px}.mandate-content h3{font-size:27px}.leadership-context{grid-template-columns:1fr 1fr;gap:20px}.leadership-context>div:last-child{grid-column:1/-1}.motion-toggle{width:27px;height:27px}.nav-actions{gap:9px}.nav-contact{font-size:10px}.hero-grid{gap:30px}.motion-ready .will-reveal{transform:translateY(15px)}}
 
 @media(max-width:480px){.nav-contact{display:none}}
+
+/* Mobile layout and touch navigation */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+img,svg,canvas{max-width:100%}
+.hero-grid>*,.career-grid>*,.about-grid>*,.edu-grid>*,.contact-top>*,.mandate-shell>*,.leadership-context>*,.role>*{min-width:0}
+.menu-toggle{display:none}
+.contact-links a>span:first-child,.contact-links button>span:first-child{min-width:0;overflow-wrap:anywhere}
+.contact-links a>span:last-child,.contact-links button>span:last-child{flex-shrink:0;margin-left:12px}
+@media(max-width:1050px) and (min-width:761px){
+.nav-links{gap:10px;font-size:11px}.nav-actions{gap:8px}.nav-contact{display:none}
+.hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+h1{font-size:clamp(39px,5.1vw,54px);letter-spacing:-2.2px}
+}
+@media(max-width:760px){
+html{scroll-padding-top:90px}
+.wrap{width:calc(100% - 40px)}
+.nav{position:relative;gap:8px;min-height:76px;height:auto;padding-block:10px;flex-wrap:wrap}
+.brand{gap:8px;min-width:0}.brand-name{font-size:12px}.monogram{flex-shrink:0}
+.nav-actions{gap:5px;margin-left:auto}
+.lang{padding:0}.lang button{min-width:40px;min-height:44px;padding:8px;font-size:12px}
+.motion-toggle{width:44px;height:44px;flex-shrink:0}
+.menu-toggle{display:grid;place-items:center;min-width:44px;min-height:44px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink);font-size:20px}
+.nav-contact{display:none}
+.nav-links{display:none;order:3;flex-basis:100%;padding:12px 0 4px;border-top:1px solid var(--line);grid-template-columns:1fr 1fr;gap:6px 14px}
+.nav-links.is-open{display:grid}.nav-links a{min-height:44px;display:flex;align-items:center;font-size:13px}.nav-links a:after{bottom:3px}
+.hero-top{flex-wrap:wrap;gap:12px;line-height:1.6}.hero-top .loc{flex-wrap:wrap}
+.hero-actions{flex-wrap:wrap;gap:12px 20px}.hero-actions .button,.text-link{min-height:44px;display:inline-flex;align-items:center}
+.micro{flex-wrap:wrap;gap:8px 12px;line-height:1.6}
+h1{font-size:clamp(36px,9.5vw,65px);letter-spacing:-1.8px;overflow-wrap:normal}h1 em{letter-spacing:-1.5px}
+h2,.mandate-content h3,.mandate-role h3{overflow-wrap:break-word}
+.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.metric span{font-size:11px;line-height:1.6;display:block}.metric-label{font-size:12px}
+.company-head{flex-wrap:wrap;gap:6px}.period{white-space:normal;font-size:11px}.role-date{font-size:11px}
+.mandate-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.mandate-tabs button{min-height:56px;font-size:12px;line-height:1.5}.mandate-content{min-height:0}
+.about-grid p,.intro{font-size:14px}.role p,.expertise-item p,.sector-row p,.edu-item p,.mandate-content>p,.mandate-content li{font-size:13px}
+.visual-bottom{gap:12px}.visual-bottom p{font-size:23px}.visual-index{flex-shrink:0}
+.contact-links a,.contact-links button{min-height:56px;font-size:14px;line-height:1.6}.contact h2{font-size:clamp(34px,9vw,44px)}
+.footer{font-size:11px}.footer a{display:inline-flex;min-height:44px;align-items:center}
+}
+@media(max-width:380px){
+.wrap{width:calc(100% - 32px)}.brand-name{max-width:72px;line-height:1.3}.nav-actions{gap:3px}
+.lang button{min-width:36px}.motion-toggle{width:40px}.monogram{width:30px;height:30px}
+.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .button{width:100%}.hero-actions .text-link{align-self:flex-start}
+.role{grid-template-columns:1fr;gap:5px}.role-date{font-weight:500}
+.mandate-content{padding:24px 18px}.mandate-sidebar{padding:20px 12px}.mandate-role{padding-inline:6px}
+.mandate-tabs{grid-template-columns:1fr}.leadership-context{grid-template-columns:1fr}.leadership-context>div:last-child{grid-column:auto}
+.steps{grid-template-columns:1fr}.visual{padding:20px;min-height:350px}.visual-bottom p{font-size:21px}.metric{padding-left:10px}
+}
+@media(hover:none){.sector-row:hover{padding-left:0;padding-right:0}.button:hover{transform:none;box-shadow:none}}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="reading-progress" aria-hidden="true"></div><header class="header"><nav class="wrap nav" aria-label="Main navigation"><a class="brand" href="#"><span class="monogram">DF</span><span class="brand-name">David Fernández<span style="color:#89a340">.</span></span></a><div class="nav-links"><a href="#about" data-i="navAbout">About</a><a href="#leadership" data-i="navLeadership">Leadership</a><a href="#experience" data-i="navExp">Experience</a><a href="#expertise" data-i="navExpertise">Expertise</a></div><div class="nav-actions"><button class="motion-toggle" id="motionToggle" type="button" aria-pressed="false" aria-label="Pause visual motion"><span class="motion-icon">Ⅱ</span></button><div class="lang" aria-label="Language"><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button></div><a class="nav-contact" href="#contact"><span data-i="navContact">Let's connect</span><span class="arrow">↗</span></a></div></nav></header>
+<div class="reading-progress" aria-hidden="true"></div><header class="header"><nav class="wrap nav" aria-label="Main navigation"><a class="brand" href="#"><span class="monogram">DF</span><span class="brand-name">David Fernández<span style="color:#89a340">.</span></span></a><div class="nav-links" id="mobileNavigation"><a href="#about" data-i="navAbout">About</a><a href="#leadership" data-i="navLeadership">Leadership</a><a href="#experience" data-i="navExp">Experience</a><a href="#expertise" data-i="navExpertise">Expertise</a></div><div class="nav-actions"><button class="motion-toggle" id="motionToggle" type="button" aria-pressed="false" aria-label="Pause visual motion"><span class="motion-icon">Ⅱ</span></button><div class="lang" aria-label="Language"><button type="button" data-lang="en" class="active" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button></div><a class="nav-contact" href="#contact"><span data-i="navContact">Let's connect</span><span class="arrow">↗</span></a><button type="button" class="menu-toggle" id="menuToggle" aria-controls="mobileNavigation" aria-expanded="false" aria-label="Navigation menu"><span aria-hidden="true">☰</span></button></div></nav></header>
 <main id="main">
 <section class="hero wrap"><div class="hero-top"><span data-i="heroKicker">Business vision · Technology leadership</span><span class="loc"><span class="dot"></span>Cuenca, Ecuador</span></div><div class="hero-grid"><div class="reveal"><div class="eyebrow" data-i="heroRole">Head of Core Business Solutions</div><div class="hero-org">Penta S.A. <span> / </span> Grupo Eljuri</div><h1 data-i="heroTitle">Business vision.<br><em>Technology leadership.</em></h1><p class="hero-desc" data-i="heroDesc">I'm David Fernández, Head of Core Business Solutions. I lead enterprise platforms, multidisciplinary teams and the transformation of critical business processes.</p><div class="hero-actions"><a class="button" href="#experience"><span data-i="explore">Explore my experience</span><span>↗</span></a><button class="text-link" style="background:none;border-top:0;border-left:0;border-right:0;color:inherit" type="button" id="download"><span data-i="download">Download CV</span> ↓</button></div><div class="micro"><span data-i="microOne">Strategy & execution</span><span class="line"></span><span data-i="microTwo">Corporate & multi-company environments</span></div></div><div class="visual reveal" aria-label="Business, people and technology brought together through enterprise solutions"><div class="visual-head"><span data-i="visualLabel">THE ENTERPRISE PERSPECTIVE</span><span class="tiny-cross">+</span></div><div class="diagram particle-scene"><canvas id="enterpriseCanvas" aria-hidden="true"></canvas><div class="scene-core"><span>CORE</span><strong>BUSINESS</strong></div><span class="scene-label label-business" data-i="svgBusiness">BUSINESS</span><span class="scene-label label-people" data-i="svgPeople">PEOPLE</span><span class="scene-label label-tech" data-i="svgTech">TECHNOLOGY</span><span class="scene-orbit orbit-one"></span><span class="scene-orbit orbit-two"></span></div><div class="visual-bottom"><p data-i="visualCaption">A clear direction.<br>A connected enterprise.</p><span class="visual-index">ERP / DATA / AI</span></div></div></div><div class="metrics"><div class="metric-label" data-i="metricsLabel">Leadership in practice.<br>Scope across the Penta portfolio.</div><div class="metric"><strong>17</strong><span data-i="metricTeam">people in the team</span></div><div class="metric"><strong>15</strong><span data-i="metricProjects">projects managed to date</span></div><div class="metric"><strong>7</strong><span data-i="metricClosed">projects closed</span></div></div></section>
 <section id="about" class="section wrap"><div class="section-top"><div class="section-number" data-i="aboutLabel">01 / PERSPECTIVE</div><div class="section-heading"><h2 data-i="aboutTitle">A business foundation.<br><em>A technology mindset.</em></h2><p class="intro" data-i="aboutIntro">Good transformation starts with understanding how a business actually operates.</p></div></div><div class="about-grid"><div><p data-i="aboutP1">My career began on the operational side: inventory, product structures, warehouse processes and imports. Moving into systems gave me a perspective I still bring to every initiative — technology must make sense to the people running the business.</p><p data-i="aboutP2">Today, I lead Core Business Solutions at Penta S.A., in the Grupo Eljuri environment. I define functional direction, manage the project portfolio and lead the evolution and support of platforms that serve financial, commercial, logistical, production and administrative processes.</p></div><div><div class="note" data-i="aboutNote">I helped build a delivery organization: structuring the team, establishing an implementation methodology and creating the controls needed to manage multiple ERP projects.</div><div class="small-caption" data-i="focusLabel">Current focus</div><div class="pills"><span class="pill" data-i="pill1">Enterprise applications</span><span class="pill" data-i="pill2">ERP transformation</span><span class="pill" data-i="pill3">Delivery governance</span><span class="pill" data-i="pill4">AI & automation</span></div></div></div></section>
@@ -67,5 +116,17 @@ function resizeScene(){lastDrawnAngle=-1;const rect=canvas.getBoundingClientRect
 canvas.addEventListener('pointermove',e=>{const r=canvas.getBoundingClientRect();targetX=(e.clientX-r.left-r.width/2)/r.width;targetY=(e.clientY-r.top-r.height/2)/r.height});canvas.addEventListener('pointerleave',()=>{targetX=0;targetY=0});if('IntersectionObserver'in window)new IntersectionObserver(e=>{sceneVisible=e[0].isIntersecting}).observe(canvas);
 function drawScene(time){requestAnimationFrame(drawScene);if(document.hidden||!sceneVisible||time-lastFrame<33)return;lastFrame=time;if(!motionEnabled&&lastDrawnAngle===angle)return;if(motionEnabled){angle+=.003;pointerX+=(targetX-pointerX)*.04;pointerY+=(targetY-pointerY)*.04}lastDrawnAngle=angle;ctx.clearRect(0,0,cw,ch);const radius=Math.min(cw*.30,ch*.43),rot=angle+pointerX*.6,tilt=.2+pointerY*.3;const glow=ctx.createRadialGradient(cw/2,ch/2,10,cw/2,ch/2,radius*1.4);glow.addColorStop(0,'#d9ed9a0b');glow.addColorStop(1,'#d9ed9a00');ctx.fillStyle=glow;ctx.fillRect(0,0,cw,ch);const projected=points.map(([x,y,z])=>{const rx=x*Math.cos(rot)+z*Math.sin(rot),rz=-x*Math.sin(rot)+z*Math.cos(rot),ry=y*Math.cos(tilt)-rz*Math.sin(tilt),depth=y*Math.sin(tilt)+rz*Math.cos(tilt),persp=3/(3-depth*.35);return {x:cw/2+rx*radius*persp,y:ch/2+ry*radius*persp,z:depth}}).sort((a,b)=>a.z-b.z);for(const p of projected){const alpha=(p.z+1.5)/3;const centerDistance=Math.hypot(p.x-cw/2,p.y-ch/2);ctx.fillStyle='rgba(208,236,156,'+(alpha*(centerDistance<55?.13:.85))+')';ctx.beginPath();ctx.arc(p.x,p.y,.45+alpha*.9,0,Math.PI*2);ctx.fill()}for(let i=0;i<3;i++){const a=angle*.7+i*Math.PI*2/3;const x=cw/2+Math.cos(a)*radius*1.45,y=ch/2+Math.sin(a)*radius*.55;ctx.strokeStyle='#d9ed9a25';ctx.beginPath();ctx.moveTo(cw/2,ch/2);ctx.lineTo(x,y);ctx.stroke();ctx.fillStyle='#dcf0ac';ctx.beginPath();ctx.arc(x,y,2.5,0,Math.PI*2);ctx.fill()}}requestAnimationFrame(drawScene);
 
+</script>
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const mobileNavigation=document.getElementById('mobileNavigation');
+function closeMobileMenu(){mobileNavigation.classList.remove('is-open');menuToggle.setAttribute('aria-expanded','false');}
+menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')!=='true';mobileNavigation.classList.toggle('is-open',open);menuToggle.setAttribute('aria-expanded',String(open));});
+mobileNavigation.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMobileMenu));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuToggle.getAttribute('aria-expanded')==='true'){closeMobileMenu();menuToggle.focus();}});
+document.addEventListener('click',e=>{if(!e.target.closest('.nav'))closeMobileMenu();});
+const mobileBreakpoint=matchMedia('(max-width:760px)');mobileBreakpoint.addEventListener('change',closeMobileMenu);
+function translateMobileMenu(){menuToggle.setAttribute('aria-label',document.documentElement.lang==='es'?'Menú de navegación':'Navigation menu');}
+window.addEventListener('languagechange',translateMobileMenu);translateMobileMenu();
 </script>
 </body></html>
